@@ -11,15 +11,23 @@
 
 <body>
     <header>
+    
         <img id="aloha" src="images/aloha-logo.svg" />
+    
         <ul>
             <li><a class = "scroll" href="#top">about</a></li>
             <li><a class = "scroll" href="#shop">shop</a></li>
             <li><a class = "scroll" href="#featured">featured</a></li>
             <li><a class = "scroll" href="#bottom">updates</a></li>
         </ul>
-        
-        <img id="carticon" src="images/cart-icon.svg" />
+    
+        <div class = "cart-container">
+            <img id="carticon" src="images/cart-icon.svg" />
+                <div id = "cartUpdate">
+                    0
+                </div>
+        </div>
+    
     </header> 
 
 <!--SPRING/SUMMER COLLECTION BANNER-->
@@ -37,13 +45,13 @@
     <div id = "introduction" id = "top">
         <h2>Hand-Crafted <span class="bold_text">Styles</span></h2>
         <div id="paragraph_container">
-            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br> current selection of products or sign-up for updates below.</p>    
+            <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our 
+                current selection of products or sign-up for updates below.</p>    
         </div>
     </div>
 
 <!-- GRID STYLE MENU -->
-    <div class="category_grid">
-        <div id = "shop"></div>
+    <div class="category_grid" id = "shop">
         <div class="box mens">
             <a href="#">
                 <img src="images/mens-category.jpg" />
@@ -88,6 +96,7 @@
     </div>
 
 <!-- MOST LOVED PRODUCTS-->
+<section class = "carousel_wrapper">
     <div class = "loved-products" id ="featured">
         <h2>Most-Loved <span class = "bold_text">Products</span></h2>
     </div>
@@ -99,9 +108,9 @@
             <h5>Dresses</h5>
             <h3>Stretch Knit Dress</h3>
             <p>$169.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
         
         <div class="carousel-cell">
@@ -109,9 +118,9 @@
             <h5>Shirts</h5>
             <h3>Cotton Blue Shirt</h3>
             <p>$89.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
 
         <div class="carousel-cell">
@@ -119,9 +128,9 @@
             <h5>Dresses</h5>
             <h3>Checked Stretch Dress</h3>
             <p>$129.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
 
         <div class="carousel-cell">
@@ -129,9 +138,9 @@
             <h5>Bags</h5>
             <h3>Blue Hipster Backpack</h3>
             <p>$69.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
 
         <div class="carousel-cell">
@@ -139,9 +148,9 @@
             <h5>Demin</h5>
             <h3>Demin Overall Shorts</h3>
             <p>$89.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
 
         <div class="carousel-cell">
@@ -149,9 +158,9 @@
             <h5>Dresses</h5>
             <h3>Pink Dotted Dress</h3>
             <p>$99.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
 
         <div class="carousel-cell">
@@ -159,21 +168,21 @@
             <h5>Dresses</h5>
             <h3>Blue Silk Dress</h3>
             <p>$189.00</p>
-            <a href="#">
+            
                 <input type="submit" class="addtocart" name="addtocart" value="Add to Cart">
-            </a>
+            
         </div>
     </div>
+</section>
 
 <!-- SUBSCRIBE CONTAINER-->
 <div class="signup-container" id = "bottom"> 
         <h2>Sign-up for <span class= "bold_text">Updates</span></h2>
-        <p>Stay updates on our latest product releases, be first to find out about<br>
-        upcoming sales, and get free style tips form our blog. Unsubscribe at any time.</p>
+        <p>Stay updates on our latest product releases, be first to find out about upcoming sales, and get free style tips form our blog. Unsubscribe at any time.</p>
     
-    <form action="" method="">
+    <form action="action.php" method="POST">
         <div class = "email-container">
-            <input type = "text" id = "email" placeholder="Your Email" name="mail" >
+            <input type = "email" id = "email" placeholder="Your Email" name="mail" >
             <button type = "submit" id = "subscribe">Subscribe</button>
         </div>
     </form>
@@ -184,6 +193,7 @@
     <script src="flickity-docs/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 </body>
+
 <footer>
     <br>
     <div class = "footer-container">
@@ -195,11 +205,11 @@
             <span>1490 W Broadway <br> Vancouver, BC, Canada</span>
         </div>
         <div id="right-container">
-            <a href="#"><img src="images/facebook.png"/>Facebook</a>
-            <a href="#"><img src="images/twitter.png"/>Twitter</a>
-            <a href="#"><img src="images/instagram.png"/>Instagram</a>
-            <a href="#"><img src="images/pinterest.png"/>Pinterest</a>
-            <a href="#"><img src="images/google-plus.png"/>Google+</a>
+            <img src="images/facebook.png"/><a href="#">Facebook</a>
+            <img src="images/twitter.png"/><a href="#">Twitter</a>
+            <img src="images/instagram.png"/><a href="#">Instagram</a>
+            <img src="images/pinterest.png"/><a href="#">Pinterest</a>
+            <img src="images/google-plus.png"/><a href="#">Google+</a>
         </div>
     </div>
 </footer>
